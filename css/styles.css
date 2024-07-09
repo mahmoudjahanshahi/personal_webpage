@@ -10987,7 +10987,7 @@ section.resume-section .resume-section-content {
   display: block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .logo-img {
       display: none;
   }
