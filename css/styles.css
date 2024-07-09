@@ -10984,11 +10984,11 @@ section.resume-section .resume-section-content {
 }
 
 .logo-img {
-  width: 300px;
+  display: block;
 }
 
 @media (max-width: 767px) {
   .logo-img {
-      width: 80px;
+      display: none;
   }
 }
