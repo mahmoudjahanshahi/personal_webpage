@@ -10982,3 +10982,13 @@ section.resume-section .resume-section-content {
 .email-link:hover {
   text-decoration: underline;
 }
+
+.logo-img {
+  width: 300px;
+}
+
+@media (max-width: 767px) {
+  .logo-img {
+      width: 80px;
+  }
+}
