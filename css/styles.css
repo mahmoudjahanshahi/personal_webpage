@@ -10992,3 +10992,8 @@ section.resume-section .resume-section-content {
       display: none;
   }
 }
+
+.highlight-name {
+  color: #000000;
+  font-weight: bold;
+}
