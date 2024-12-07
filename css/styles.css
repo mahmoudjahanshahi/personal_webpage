@@ -35,16 +35,12 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
   --ut-orange-rgb: 255, 130, 0;
-  --bs-primary-rgb: 189, 93, 56;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -63,11 +59,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
@@ -75,10 +68,22 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #bd5d38;
-  --bs-link-hover-color: #974a2d;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
+  
+  /* Primary color updates */
+  --bs-primary: #1f2937; /* Primary dark color */
+  --bs-primary-rgb: 31, 41, 55; /* RGB for gradients or shadows */
+
+  /* Light and dark color references */
+  --bs-light: #f8fafc; /* Used for light text/components */
+  --bs-dark: #1a202c; /* Darker backgrounds for contrast */
+
+  --bs-body-bg: #2d3748; /* Lighter dark gray for background */
+  --bs-body-color: #f8fafc; /* Brighter light gray for text */
+  --bs-link-color: #3b82f6; /* Keep bright blue for links */
+  --bs-link-hover-color: #2563eb; /* Slightly darker blue for hover */
+  --bs-border-color: #374151; /* Maintain contrast for borders */
+  --bs-highlight-bg: #2d3748; /* Highlight background */
 }
 
 *,
@@ -8039,7 +8044,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--ut-orange-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -8130,7 +8135,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--ut-orange-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
@@ -10974,7 +10979,7 @@ section.resume-section .resume-section-content {
 }
 
 .email-link {
-  color: var(--ut-orange);
+  color: rgba(var(--bs-primary-rgb), 1);
   text-decoration: none;
   font-weight: bold;
 }
