@@ -10,6 +10,11 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ /*!
+* Custom Version by Mahmoud Jahanshahi
+* This version is based on the Start Bootstrap Resume template and includes customizations
+* to suit specific needs, including "styling adjustments" and "content modifications".
+*/
 :root {
   --ut-orange: #FF8200;
   --bs-blue: #0d6efd;
@@ -80,11 +85,16 @@
   --bs-body-bg: #030637; /* background */
   --bs-body-color: #f8fafc; /* text */
   --bs-link-color: #2563eb; /* links */
-  --bs-link-hover-color:#3b82f6; /* hover */
+  --bs-link-hover-color:#bd5d38; /* hover */
   --bs-border-color: #4a5568; /* borders */
   --bs-highlight-bg: #4b5563; /* Highlight background */
 
   --bs-secondary-accent: #20c997; 
+
+  /* social-icons */
+  --bs-social-icon-background-color: #495057;
+  --bs-social-icon-color: #030637;
+  --bs-social-icon-hover-background-color: #bd5d38;
 }
 
 *,
@@ -175,7 +185,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; 
 }
 
 abbr[title] {
@@ -10929,24 +10939,6 @@ p.lead {
     display: block;
   }
 }
-.social-icons .social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff;
-  border-radius: 100%;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
-}
-.social-icons .social-icon:last-child {
-  margin-right: 0;
-}
-.social-icons .social-icon:hover {
-  background-color: #bd5d38;
-}
 
 .dev-icons {
   font-size: 3rem;
@@ -11006,11 +10998,44 @@ section.resume-section .resume-section-content {
   font-weight: bold;
 }
 
-.orcid-icon {
-  color: #495057; /* Default color */
-  text-decoration: none; /* Ensure no underline */
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: var(--bs-social-icon-background-color);
+  color: var(--bs-social-icon-color);
+  border-radius: 100%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-right: 1.5rem; /* If needed for lists of icons */
 }
 
-.orcid-icon:hover {
-  color: #bd5d38; /* Custom hover color for ORCID */
+.icon-button:last-child {
+  margin-right: 0; /* Ensures no extra margin for the last icon */
+}
+
+.icon-button:hover {
+  background-color: var(--bs-social-icon-hover-background-color);
+  color: var(--bs-social-icon-color);
+}
+
+h2 {
+  display: flex; /* Allows children to align */
+  align-items: center; /* Vertically aligns the text and icon */
+  gap: 0.5rem; /* Adds spacing between text and the icon */
+}
+
+.youtube {
+  height: 1.5rem; /* Smaller height to match text */
+  width: 1.5rem;
+  font-size: 0.75rem; /* Adjust font size for smaller icon */
+  margin-left: 0.25rem; /* Adjust margin for spacing */
+  vertical-align: middle; /* Ensures alignment with text */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem; /* Space between icons */
 }

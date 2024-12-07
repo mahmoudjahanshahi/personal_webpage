@@ -59,11 +59,19 @@
                     </div>
                     <p class="lead mb-5">Hi, welcome to my page! I am an experienced data scientist with a superb record of mining open source software repositories. I have also considerable experience in business intelligence consulting as well as financial analysis in various industries, especially telecommunications.</p>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://github.com/mahmoudjahanshahi" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/mahmoudjahanshahi/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://www.researchgate.net/profile/Mahmoud-Jahanshahi" target="_blank"><i class="fa-brands fa-researchgate"></i></a>
-                        <a class="social-icon" href="https://scholar.google.com/citations?user=6V6kApMAAAAJ&hl=en&oi=ao" target="_blank"><i class="fab fa-google"></i></a>
-                    </div>
+                        <a class="icon-button" href="https://github.com/mahmoudjahanshahi" target="_blank">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a class="icon-button" href="https://www.linkedin.com/in/mahmoudjahanshahi/" target="_blank">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="icon-button" href="https://www.researchgate.net/profile/Mahmoud-Jahanshahi" target="_blank">
+                          <i class="fa-brands fa-researchgate"></i>
+                        </a>
+                        <a class="icon-button" href="https://scholar.google.com/citations?user=6V6kApMAAAAJ&hl=en&oi=ao" target="_blank">
+                          <i class="fab fa-google"></i>
+                        </a>
+                      </div>                      
                 </div>
             </section>
             <hr class="m-0" />
@@ -493,7 +501,7 @@
                                 <a href="assets/certificates/social_psychology.pdf" target="_blank">Download PDF</a>
                             </div>
                             <div class="flex-shrink-0">
-                                <span class="text-primary">>June 2020</span>
+                                <span class="text-primary">June 2020</span>
                             </div>
                         </li>                        
                         <li class="mb-3 d-flex flex-column flex-md-row justify-content-between">
@@ -582,9 +590,18 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>Besides being a data scientist, I am passionate about playing the piano 
-                        <a href="https://www.youtube.com/@mymusicjourney" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-                        and maintaining a rigorous CrossFit regimen. Music offers me a creative outlet and relaxation, while CrossFit challenges me physically and mentally, complementing my analytical work. These interests not only balance my professional life but also contribute to my overall well-being and productivity.</p>
+                    <p>
+                        Besides being a data scientist, I am passionate about playing the piano 
+                        and maintaining a rigorous CrossFit regimen. Music offers me a creative outlet and relaxation, 
+                        while CrossFit challenges me physically and mentally, complementing my analytical work. 
+                        These interests not only balance my professional life but also contribute to my overall well-being and productivity.
+                    </p>
+                    <p>
+                        My Music Journey on YouTube: 
+                        <a href="https://www.youtube.com/@mymusicjourney" target="_blank" class="icon-button youtube">
+                          <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -594,7 +611,7 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">
                         Publications
-                        <a href="https://orcid.org/0000-0003-4408-1183" target="_blank" class="orcid-icon">
+                        <a href="https://orcid.org/0000-0003-4408-1183" target="_blank" class="icon-button orcid">
                             <i class="fa-brands fa-orcid"></i>
                         </a>
                     </h2>
@@ -644,10 +661,19 @@
                 </div>
             </section>
 
+            <!-- Footer Section -->
+            <footer class="text-center mt-4">
+                <p>&copy; <span id="currentYear"></span> Mahmoud Jahanshahi. All rights reserved.</p>
+            </footer>
+
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- JavaScript to dynamically update year -->
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
