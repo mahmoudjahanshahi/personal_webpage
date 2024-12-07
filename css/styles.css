@@ -11005,3 +11005,12 @@ section.resume-section .resume-section-content {
   -webkit-text-fill-color: transparent; /* Show gradient only on text */
   font-weight: bold;
 }
+
+.orcid-icon {
+  color: #495057; /* Default color */
+  text-decoration: none; /* Ensure no underline */
+}
+
+.orcid-icon:hover {
+  color: #bd5d38; /* Custom hover color for ORCID */
+}
