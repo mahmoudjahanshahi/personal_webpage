@@ -3,17 +3,59 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Mahmoud Jahanshahi</title>
+        <meta name="description" content="Discover Mahmoud Jahanshahi's academic achievements and professional expertise in data science, open-source software, and business intelligence. Connect today!" />
+        <meta name="author" content="Mahmoud Jahanshahi" />
+        <title>Mahmoud Jahanshahi - Data Scientist | Personal Website</title>
+        <link rel="canonical" href="https://mahmoudjahanshahi.com/" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <meta name="theme-color" content="#030637" />
+
+        <!-- Critical CSS for Largest Contentful Paint -->
+        <style>
+            body {
+                font-family: 'Muli', sans-serif;
+                font-size: 1rem;
+                color: #6c757d;
+                background-color: #030637;
+            }
+            .lead {
+                font-size: 1.25rem;
+                font-weight: 300;
+                margin-bottom: 1rem;
+                line-height: 1.5;
+            }
+        </style>
+
+        <!-- Open Graph Metadata -->
+        <meta property="og:title" content="Mahmoud Jahanshahi - Data Scientist" />
+        <meta property="og:description" content="Explore Mahmoud Jahanshahi's academic journey, career, and expertise in data science." />
+        <meta property="og:url" content="https://mahmoudjahanshahi.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://mahmoudjahanshahi.com/assets/img/profile.jpg" />
+
+        <!-- Twitter Card-->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mahmoud Jahanshahi - Data Scientist" />
+        <meta name="twitter:description" content="Explore Mahmoud Jahanshahi's academic journey, career, and expertise in data science." />
+        <meta name="twitter:image" content="https://mahmoudjahanshahi.com/assets/img/profile.jpg" />
+
+        <!-- Keywords -->
+        <meta name="keywords" content="Mahmoud Jahanshahi, Data Scientist, Computer Science, Business Intelligence, Software Repository Mining" />
+
+        <!-- Google Fonts (Optimized) -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500;700&family=Muli:wght@400;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500;700&family=Muli:wght@400;800&display=swap" rel="stylesheet">
+        </noscript>        
+
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" defer></script>
+
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript>
+            <link href="css/styles.css" rel="stylesheet">
+        </noscript>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -21,7 +63,14 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Mahmoud Jahanshahi</span>
                 <span class="d-none d-lg-block">
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                    <picture>
+                        <source srcset="assets/img/profile.webp" type="image/webp">
+                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" 
+                             src="assets/img/profile.jpg" 
+                             alt="Profile Picture" 
+                             loading="lazy" />
+                    </picture>                    
+                </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -51,27 +100,37 @@
                         Computer Science PhD Candidate, The University of Tennessee, Knoxville
                         <br>
                         <script type="text/javascript">
-                            var user = "mj";
-                            var domain = "mahmoudjahanshahi.com";
-                            var encodedEmail = '&#109;&#106;' + '&#064;' + '&#109;&#097;&#104;&#109;&#111;&#117;&#100;&#106;&#097;&#104;&#097;&#110;&#115;&#104;&#097;&#104;&#105;&#046;&#099;&#111;&#109;';
-                            document.write('<a href="mailto:' + encodedEmail + '" class="email-link">' + user + ' [at] ' + domain + '</a>');
-                        </script>                                                
-                    </div>
-                    <p class="lead mb-5">Hi, welcome to my page! I am an experienced data scientist with a superb record of mining open source software repositories. I have also considerable experience in business intelligence consulting as well as financial analysis in various industries, especially telecommunications.</p>
+                            var user = String.fromCharCode(109, 106); // Encodes "mj"
+                            var domain = String.fromCharCode(109, 97, 104, 109, 111, 117, 100, 106, 97, 104, 97, 110, 115, 104, 97, 104, 105, 46, 99, 111, 109); // Encodes "mahmoudjahanshahi.com"
+                            document.write('<a href="mailto:' + user + '@' + domain + '" class="email-link" aria-label="Email Mahmoud Jahanshahi">' + user + '@' + domain + '</a>');
+                        </script>
+                        <noscript>
+                            <p>Email: mj@mahmoudjahanshahi.com</p>
+                        </noscript>
+                    </div>                    
+                    <p class="lead">Hi, welcome to my page! I am an experienced data scientist with a superb record of mining open source software repositories. I have also considerable experience in business intelligence consulting as well as financial analysis in various industries, especially telecommunications.</p>
+                    <br>
+                    <p class="lead">Check out the papers and associated repositories for my latest projects in the <a href="#publications">publications</a> section below!</p>                      
+                    <br>
+                    <p class="lead">Socials:</p>
                     <div class="social-icons">
-                        <a class="icon-button" href="https://github.com/mahmoudjahanshahi" target="_blank">
-                          <i class="fab fa-github"></i>
+                        <a class="icon-button" href="https://github.com/mahmoudjahanshahi" target="_blank" aria-label="GitHub Profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span class="visually-hidden">GitHub</span>
                         </a>
-                        <a class="icon-button" href="https://www.linkedin.com/in/mahmoudjahanshahi/" target="_blank">
-                          <i class="fab fa-linkedin-in"></i>
+                        <a class="icon-button" href="https://www.linkedin.com/in/mahmoudjahanshahi/" target="_blank" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            <span class="visually-hidden">LinkedIn</span>
                         </a>
-                        <a class="icon-button" href="https://www.researchgate.net/profile/Mahmoud-Jahanshahi" target="_blank">
-                          <i class="fa-brands fa-researchgate"></i>
+                        <a class="icon-button" href="https://www.researchgate.net/profile/Mahmoud-Jahanshahi" target="_blank" aria-label="ResearchGate Profile">
+                            <i class="fa-brands fa-researchgate" aria-hidden="true"></i>
+                            <span class="visually-hidden">ResearchGate</span>
                         </a>
-                        <a class="icon-button" href="https://scholar.google.com/citations?user=6V6kApMAAAAJ&hl=en&oi=ao" target="_blank">
-                          <i class="fab fa-google"></i>
+                        <a class="icon-button" href="https://scholar.google.com/citations?user=6V6kApMAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar Profile">
+                            <i class="fab fa-google" aria-hidden="true"></i>
+                            <span class="visually-hidden">Google Scholar</span>
                         </a>
-                      </div>                      
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
