@@ -16,18 +16,6 @@
 * to suit specific needs, including "styling adjustments" and "content modifications".
 */
 
-@font-face {
-  font-family: 'Muli';
-  src: url('https://fonts.gstatic.com/s/muli/v21/7Aulp_0qiz-aVz7u3PJLcUMYOFk.woff2') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Saira Extra Condensed';
-  src: url('https://fonts.gstatic.com/s/sairaextracondensed/v12/UqyVK80ADR8zjBjOQmB3kbcpF7OZSDPNAmEdNVfZYzxRyv0.woff2') format('woff2');
-  font-display: swap;
-}
-
 :root {
   /* Global Colors */
   --bs-black: #000;
