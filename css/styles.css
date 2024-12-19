@@ -28,7 +28,7 @@
   --bs-primary-rgb: 111, 66, 193;
   --bs-secondary: #6c757d;
   --bs-secondary-rgb: 108, 117, 125;
-  --bs-heading-font-color: #e2e8f0;
+  --bs-heading-font-color: #b5bcca;
   --bs-success: #198754;
   --bs-success-rgb: 25, 135, 84;
   --bs-info: #0dcaf0;
@@ -863,4 +863,15 @@ h2 {
 .social-icons {
   display: flex;
   gap: 1.5rem; /* Space between icons */
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  border-radius: 30px; /* Adjust to make it pill-shaped */
+  padding: 0.3rem 1.1rem; /* Adjust padding for better appearance */
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-link-hover-color);
 }

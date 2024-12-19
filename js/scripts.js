@@ -31,4 +31,13 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // New functionality for "Show More" / "Show Less" button
+    const toggleButton = document.getElementById('toggleButton');
+    if (toggleButton) {
+        toggleButton.addEventListener('click', function () {
+            const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+            toggleButton.textContent = isExpanded ? 'Show Less' : 'Show More';
+        });
+    }
+
 });
