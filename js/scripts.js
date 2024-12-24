@@ -36,8 +36,19 @@ window.addEventListener('DOMContentLoaded', event => {
     if (toggleButton) {
         toggleButton.addEventListener('click', function () {
             const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-            toggleButton.textContent = isExpanded ? 'Show Less' : 'Show More';
+            if (isExpanded) {
+                // Save the current scroll position when expanding
+                previousScrollPosition = window.scrollY;
+                toggleButton.textContent = 'Show Less'; // Indicate the expanded state
+            } else {
+                // Scroll back to the previous position when collapsing
+                window.scrollTo({ top: previousScrollPosition, behavior: 'smooth' });
+                toggleButton.textContent = 'Show More'; // Indicate the collapsed state
+            }
+
+            // Update the button's aria-expanded attribute for accessibility
+            toggleButton.setAttribute('aria-expanded', !isExpanded);
         });
-    }
+    };
 
 });
