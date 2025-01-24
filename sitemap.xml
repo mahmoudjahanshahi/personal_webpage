@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mahmoudjahanshahi.com/</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://mahmoudjahanshahi.com/index.html</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://mahmoudjahanshahi.com/portfolio.html</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>

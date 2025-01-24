@@ -523,31 +523,6 @@ button:not(:disabled),
   }
 }
 
-/* rtl:begin:ignore */
-
-/* rtl:end:ignore */
-
-/* rtl:begin:ignore */
-
-/* rtl:end:ignore */
-
-/* rtl:begin:ignore */
-
-/* rtl:end:ignore */
-
-/* rtl:begin:ignore */
-
-/* rtl:end:ignore */
-
-/* rtl:options: {
-  "autoRename": true,
-  "stringMap":[ {
-    "name"    : "prev-next",
-    "search"  : "prev",
-    "replace" : "next"
-  } ]
-} */
-
 @keyframes spinner-border {
   to {
     transform: rotate(360deg) /* rtl:ignore */;
@@ -662,9 +637,6 @@ button:not(:disabled),
   text-align: center !important;
 }
 
-/* rtl:begin:remove */
-
-/* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
@@ -674,11 +646,16 @@ button:not(:disabled),
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
+@media (min-width: 992px) {
+  .bg-primary {
+    --bs-bg-opacity: 0.95;
+  }
+}
 
 .rounded-circle {
   border-radius: 50% !important;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .flex-md-row {
     flex-direction: row !important;
   }
@@ -725,6 +702,7 @@ p.lead {
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
+  top: 4.5rem;
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
@@ -794,7 +772,7 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   section.resume-section {
     min-height: 100vh;
   }
@@ -874,4 +852,58 @@ h2 {
 
 .btn-primary:hover {
   background-color: var(--bs-link-hover-color);
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(var(--bs-primary-rgb),1);
+  text-align: center;
+  padding: 10px;
+  z-index: 1100;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+@media (min-width: 992px) {
+  header {
+    text-align: left;
+    display: flex;
+    padding: 10px 20px 10px 280px; /* top right bottom left*/
+  }
+}
+
+header button {
+  background-color: var(--bs-social-icon-background-color);
+  color: var(--bs-social-icon-color);
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header button:hover {
+  background-color: var(--bs-social-icon-hover-background-color);
+}
+
+main {
+  padding: 60px 10px 10px; /* Adjust padding to account for the fixed header */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--bs-body-bg);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  footer {
+    width: 85%;
+  }
 }
