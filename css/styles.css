@@ -85,6 +85,8 @@
   --bs-highlight-bg: #4b5563; 
 
   --bs-code-color: #d63384;
+
+  --navbar-width: 17rem;
 }
 
 *,
@@ -672,7 +674,7 @@ button:not(:disabled),
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: var(--navbar-width);
   }
 }
 h1, .h1,
@@ -723,7 +725,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: var(--navbar-width);
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -891,7 +893,7 @@ header button:hover {
 }
 
 main {
-  padding: 60px 10px 10px; /* Adjust padding to account for the fixed header */
+  padding: 60px 10px 10px;
 }
 
 footer {
@@ -902,8 +904,9 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 @media (min-width: 992px) {
   footer {
-    width: 85%;
+    width: calc(100% - var(--navbar-width));
   }
 }
