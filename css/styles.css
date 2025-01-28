@@ -304,7 +304,6 @@ button:not(:disabled),
   height: auto;
 }
 
-
 .container-fluid {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -908,4 +907,12 @@ footer {
   footer {
     width: calc(100% - var(--navbar-width));
   }
+}
+
+.figure-caption {
+  display: block;
+  text-align: center; 
+  margin-top: 0.5rem;
+  color: var(--bs-body-color);
+  font-style: italic;
 }
