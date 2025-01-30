@@ -140,6 +140,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reuse-data">Reuse Dataset</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#orphan">Orphan Vulnerabilities</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#collab">Collaboration Graph</a></li>
                     </ul>
@@ -154,6 +155,38 @@
                             Under
                             <span class="text-primary">Construction</span>
                         </h1>
+                    </div>
+                </section>
+
+                <!-- Reuse data-->
+                <section class="resume-section" id="reuse-data">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Reuse Dataset</h2>
+                        <p>In contrast to some studies of dependency-based reuse supported via package managers, 
+                            no studies of OSS-wide copy-based reuse exist. In this project, we create a dataset that
+                            seeks to encourage the studies of OSS-wide copy-based reuse by providing copying activity 
+                            data that captures whole-file reuse in nearly all OSS. To accomplish that, we develop 
+                            approaches to detect copy-based reuse by developing an efficient algorithm that exploits 
+                            World of Code infrastructure. We expect this data will enable future research and tool 
+                            development that support such reuse and minimize associated risks.</p>
+                        <figure style="display: inline-block; text-align: center;">
+                            <picture>
+                                <source srcset="assets/portfolio/reuse/DFD.webp" type="image/webp">
+                                <img class="img-fluid mx-auto mb-2" 
+                                    src="assets/portfolio/reuse/DFD.png"
+                                    alt="Reuse Identification data flow diagram"
+                                    loading="lazy"/>
+                            </picture> 
+                            <figcaption class="figure-caption">Reuse Identification data flow diagram</figcaption>
+                        </figure>  
+                        <p class="mb-3">
+                            <strong><span class="highlight-name">Jahanshahi, M.</span> & Mockus, A.</strong> (2024, April). 
+                            "Dataset: Copy-based Reuse in Open Source Software."
+                            In <em>2024 IEEE/ACM 21st International Conference on Mining Software Repositories (MSR)</em> (pp. 42-47). IEEE.
+                            <br>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10555700" target="_blank" rel="noopener noreferrer">Paper</a> - 
+                            <a href="https://github.com/woc-hack/reuse-msr" target="_blank" rel="noopener noreferrer">Repository</a>
+                        </p>
                     </div>
                 </section>
 
@@ -191,6 +224,7 @@
                         </p>
                     </div>
                 </section>
+
                 <!-- Collaboration Graph-->
                 <section class="resume-section" id="collab">
                     <div class="resume-section-content">
@@ -216,7 +250,7 @@
                                          alt="Authors' Collaboration Graph"
                                          loading="lazy" />
                                 </picture>
-                                <figcaption class="figure-caption">Authors' Collaboration Graph</figcaption>
+                                <figcaption class="figure-caption">Authors' collaboration graph</figcaption>
                             </figure>
                             <figure style="flex: 1;">
                                 <picture>
@@ -226,7 +260,7 @@
                                          alt="Projects' Collaboration Graph"
                                          loading="lazy" />
                                 </picture>
-                                <figcaption class="figure-caption">Projects' Collaboration Graph</figcaption>
+                                <figcaption class="figure-caption">Projects' collaboration graph</figcaption>
                             </figure>
                         </div>
                         <p class="mb-3">
