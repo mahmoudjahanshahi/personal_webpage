@@ -87,6 +87,7 @@
   --bs-code-color: #d63384;
 
   --navbar-width: 17rem;
+  --min-header-height: 3rem;
 }
 
 *,
@@ -703,7 +704,7 @@ p.lead {
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
-  top: 4.5rem;
+  top: var(--min-header-height); 
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
@@ -860,34 +861,35 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: rgba(var(--bs-primary-rgb),1);
+  background-color: var(--bs-body-color);
   text-align: left;
   padding: 10px;
   z-index: 1100;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  min-height: var(--min-header-height);
+}
+
+.header-link {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--bs-body-bg); 
+  display: block; 
+  margin-bottom: 0; 
 }
 
 @media (min-width: 992px) {
   header {
-    display: flex;
     padding: 10px 20px 10px 280px; /* top right bottom left*/
   }
-}
-
-header button {
-  background-color: var(--bs-social-icon-background-color);
-  color: var(--bs-social-icon-color);
-  border: none;
-  padding: 10px 40px;
-  cursor: pointer;
-  border-radius: 100px;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-header button:hover {
-  background-color: var(--bs-social-icon-hover-background-color);
+  .header-link {
+    font-size: 1.75rem;
+  }
 }
 
 main {
