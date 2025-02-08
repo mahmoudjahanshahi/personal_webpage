@@ -645,13 +645,8 @@ button:not(:disabled),
 }
 
 .bg-primary {
-  --bs-bg-opacity: 1;
+  --bs-bg-opacity: 0.95;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
-}
-@media (min-width: 992px) {
-  .bg-primary {
-    --bs-bg-opacity: 0.95;
-  }
 }
 
 .rounded-circle {
@@ -861,17 +856,21 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: var(--bs-body-color);
+  background-color: rgba(var(--bs-body-color-rgb), 0.95);
   text-align: left;
   padding: 10px;
   z-index: 1100;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
   gap: 20px;
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
   min-height: var(--min-header-height);
+}
+
+header:hover {
+  background: rgba(var(--bs-body-color-rgb), 1); 
 }
 
 .header-link {
