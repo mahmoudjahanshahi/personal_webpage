@@ -917,7 +917,8 @@ footer {
 
 @media (min-width: 992px) {
   footer {
-    width: calc(100% - var(--navbar-width));
+    /* width: calc(100% - var(--navbar-width)); */
+    width: 66%
   }
 }
 
