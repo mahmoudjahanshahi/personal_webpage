@@ -37,6 +37,8 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger: #dc3545;
   --bs-danger-rgb: 220, 53, 69;
+  --bs-cute: #bd5d38;
+
 
   /* Background and Text */
   --bs-body-bg: #030637;
@@ -809,7 +811,7 @@ section.resume-section .resume-section-content {
 }
 
 .highlight-name {
-  color: #bd5d38; 
+  color: var(--bs-cute);
   font-weight: bold; 
 }
 
@@ -922,7 +924,7 @@ footer {
 @media (min-width: 992px) {
   footer {
     /* width: calc(100% - var(--navbar-width)); */
-    width: 66%
+    width: 66.35%
   }
 }
 
@@ -953,4 +955,14 @@ footer {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.section-divider {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.5rem;
+  color: var(--bs-cute);
+  margin: 2rem auto; 
+  font-weight: 600;
 }
